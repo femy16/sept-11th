@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .transformed{
+            background-color:blue;
+            transition:transform 1s;
+           filter:blur(10px);
+        }
+        .transformed:hover{
+             /*transform:rotate(60deg);
+             transform:scale(2,0.5);*/
+            filter:grayscale(10); 
+        }
+    </style>
+</head>
+<body>
+    <img class="transformed" src="images/owl.jpg" width="200" height="200">
+</body>
+</html>

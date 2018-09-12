@@ -1,0 +1,54 @@
+nav ul li a {
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+nav ul li {
+    border-bottom: 1px solid #444;
+    background-color: #1D2026;
+    font-size: 30px;
+    padding: 10px 5px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+nav ul li:hover {
+    background-color: #555;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+body {
+    background-color: #292E37;
+}
+.picture2{
+    display: none;
+}
+.picture{
+    display: inline-block;
+    width: 100%;
+}
+
+@media(min-width:414px){
+    /*everything inside media is related to desktop and outside it is
+    related to mobile*/
+    nav ul li{
+        display: inline-block;
+        font-size: 20px;
+        width: 100px;
+    }
+    .picture{
+        display: none;
+    }
+    /*since picture2 was displayed non outside @media make display inline block 
+    inside @media else it wont display*/
+    .picture2{
+        display:inline-block;
+        width: 50%;
+    }
+}
